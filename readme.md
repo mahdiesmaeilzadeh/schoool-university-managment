@@ -11,13 +11,13 @@ This project is very useful and functional for manage school/university
 ## Structurs
 - ### class:
   - #### Student:
-    - ##### properties of this class are id , name , family , and courses
+     ##### properties of this class are id , name , family , and courses
   - #### Teacher:
-    - ##### properties of this class are id , name , family , grade , and courses
+     ##### properties of this class are id , name , family , grade , and courses
   - #### Course:
-    - ##### properties of this class are id , name , unites , and scores
+     ##### properties of this class are id , name , unites , and scores
   - #### Classroom:
-    - ##### properties of this class are id , name , course , teacher , and students
+     ##### properties of this class are id , name , course , teacher , and students
 
 
 ## Instruction
@@ -41,4 +41,12 @@ For example if you select `students` this menu will open , allowing you to add, 
 5.select student
 0.back
 ```
-if you select `students` this menu will open:
+If you select `select student` and enter the corresponding studebt ID this menu will open, allowing you to manage matters related to the student's courses and scores :
+
+```
+1.info
+2.add course
+3.delet course
+4.set scores
+0.back
+```
