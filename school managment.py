@@ -284,7 +284,7 @@ while True:
                 name=str(input("name: "))
                 units=int(input("units: "))
                 c1=Course(id,name,units)
-                students.append(c1)
+                courses.append(c1)
             else:
                 print("doesnt exits")
         elif cmd==3:
