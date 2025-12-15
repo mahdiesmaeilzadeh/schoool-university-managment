@@ -1,0 +1,4 @@
+{"Students": [{"id": 1001, "name": "student 1", "family": "exaple family 1", "courses": [[3001, 0]]}]
+, "Teachers": [{"id": 2001, "name": "teacher 1", "family": "example family 2", "grade": "phD", "courses": [3001]}],
+"Courses": [{"id": 3001, "name": "python", "units": 1}],
+ "Classrooms": [{"id": 4002, "name": "python 1", "teacher": 2001, "course": 3001, "students": [1001]}]}
