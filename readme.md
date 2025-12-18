@@ -53,4 +53,4 @@ If you select `select student` and enter the corresponding student ID this menu 
 0.back
 ```
 You can open the other menues in the same way and use their features as well.
-
+ 
