@@ -1,5 +1,6 @@
 import copy
 import json
+import time
 
 class Course:
     id:int=0
@@ -143,7 +144,10 @@ for classroom in data["Classrooms"]:
 level="root"
 while True:
     if level=="root":
-        print("1.students\n2.teachers\n3.courses\n4.classrooms\n5.save\n0.exit")
+        menues=["1.students","2.teachers","3.courses","4.classrooms","5.save","0.exit"]
+        for menu in menues :
+            time.sleep(0.1)
+            print(menu)
         cmd= get_int(">>")
         if cmd==1:
             level="students"
