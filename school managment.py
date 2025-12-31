@@ -618,4 +618,4 @@ while True:
             level="save"
             exit_check=True
         elif cmd=="n" or cmd=="N":
-            break
+            exit()
