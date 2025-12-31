@@ -1,6 +1,8 @@
 import copy
 import json
 import time
+import platform
+import os
 
 class Course:
     id:int=0
@@ -82,6 +84,7 @@ selected_teacher_index=-1
 selected_classroom_index=-1
 exit_check=False
 
+clear_command= "cls" if platform.system()=="Windows" else "clear"
 
 with open("data.json","rt") as f1:
     d1=f1.read()
@@ -143,6 +146,7 @@ for classroom in data["Classrooms"]:
     
 level="root"
 while True:
+    os.system(clear_command)
     if level=="root":
         menus=["1.students","2.teachers","3.courses","4.classrooms","5.save","0.exit"]
         for menu in menus :
@@ -161,7 +165,6 @@ while True:
             level="save"
         elif cmd==0:
             level="exit"
-
 
     elif level=="students":
         menus=["1.add student","2.edit student","3.delete student","4.view students","5.select student","0.back"]
