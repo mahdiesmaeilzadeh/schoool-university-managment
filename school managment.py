@@ -475,13 +475,16 @@ while True:
             f1.write(d1)
 
         if exit_check:
-            break
+            exit()
         else:
             level="root"
 
     elif level=="student_select":
         s1=students[selected_student_index]
-        menus=["1.info","2.add course","3.delet course","4.set scores","`0.back"]
+        menus=["1.info","2.add course","3.delet course","4.set scores","0.back"]
+        for menu in menus :
+            time.sleep(0.1)
+            print(menu)
         cmd= get_int(">>")
         if cmd==1:
             print(s1)
